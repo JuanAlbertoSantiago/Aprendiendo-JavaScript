@@ -1,9 +1,12 @@
-//Variables
+/* “Guess the Number” is a classic and simple game where the objective is to guess a secret number that has been randomly selected by the computer.*/
+
+//Primero declaramos las variables
 let numeroSecreto = 4;
 let numeroUsuario = 0;
 let intentos = 1;
 let palabraVeces = 'vez';
 
+//A continuación definimos el proceso por el cuál el número secreto será adivinado.
 while (numeroUsuario != numeroSecreto) {
     numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
 
