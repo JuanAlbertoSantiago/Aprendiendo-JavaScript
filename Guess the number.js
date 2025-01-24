@@ -14,7 +14,7 @@ while (numeroUsuario != numeroSecreto) {
     console.log(numeroUsuario);
     if (numeroUsuario == numeroSecreto) {
         //Acertamos, fue verdadera la condición
-        alert(`Acertaste, el número es: ${numeroUsuario}. Lo hiciste en ${intentos} ${palabraVeces}`);
+        alert(`Acertaste, el número es: ${numeroUsuario}. Lo hiciste en ${intentos} ${intentos == ? 'vez' : 'veces'}`);
     } else {
         if (numeroUsuario > numeroSecreto) {
             alert('El número secreto es menor');
@@ -23,7 +23,7 @@ while (numeroUsuario != numeroSecreto) {
         }
         //Incrementamos el contador cuando no acierta
         intentos = intentos + 1;
-        palabraVeces = 'veces';
+        //palabraVeces = 'veces';
         if (intentos > maximosIntentos){
             alert (`Llegaste al número máximo de ${maximosIntentos} intentos`)
             break;
