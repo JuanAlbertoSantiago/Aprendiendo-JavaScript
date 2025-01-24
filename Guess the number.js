@@ -5,6 +5,7 @@ let numeroSecreto = 4;
 let numeroUsuario = 0;
 let intentos = 1;
 let palabraVeces = 'vez';
+let maximosIntentos = 3;
 
 //A continuación definimos el proceso por el cuál el número secreto será adivinado.
 while (numeroUsuario != numeroSecreto) {
@@ -23,6 +24,10 @@ while (numeroUsuario != numeroSecreto) {
         //Incrementamos el contador cuando no acierta
         intentos = intentos + 1;
         palabraVeces = 'veces';
+        if (intentos > maximosIntentos){
+            alert (`Llegaste al número máximo de ${maximosIntentos} intentos`)
+            break;
+        }
         //La condición no se cumplió
         //alert('Lo siento, no acertaste el número');
     }
