@@ -1,7 +1,7 @@
 /* “Guess the Number” is a classic and simple game where the objective is to guess a secret number that has been randomly selected by the computer.*/
 
 //Primero declaramos las variables
-let numeroSecreto = 4;
+let numeroSecreto = Math.floor(Math.random()*10)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 let palabraVeces = 'vez';
